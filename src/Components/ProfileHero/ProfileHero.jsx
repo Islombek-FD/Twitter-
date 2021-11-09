@@ -43,17 +43,21 @@ function ProfileHero() {
 							width='150'
 							height='150'
 						/>
+
 						<button className='profile-hero__user-profile--btn'>
 							{content[lang].profile.hero.edit}
 						</button>
+
 						<strong className='profile-hero__user-name'>
 							Bobur <br />
 						</strong>
+
 						<a
 							className='profile-hero__user-account'
 							href='mailto:@bobur_mavlonov'>
 							@bobur_mavlonov
 						</a>
+
 						<p className='profile-hero__user-position'>
 							UX&UI designer at &nbsp;
 							<a
@@ -162,7 +166,6 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 10
 									</li>
 									<li className='users__icon'>
 										<RetweetIcon
@@ -172,7 +175,6 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 1
 									</li>
 									<li className='users__icon'>
 										<LikeIcon
@@ -182,7 +184,6 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 8
 									</li>
 									<li className='users__icon'>
 										<ShareIcon
@@ -249,15 +250,12 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 10
 									</li>
 									<li className='users__icon'>
 										<RetweetIcon color={'#0cb245'} />
-										&nbsp; 1
 									</li>
 									<li className='users__icon'>
 										<LikeIcon color={'#ef1c5c'} />
-										&nbsp; 8
 									</li>
 									<li className='users__icon'>
 										<ShareIcon
@@ -318,7 +316,6 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 10
 									</li>
 									<li className='users__icon'>
 										<RetweetIcon
@@ -328,7 +325,6 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 1
 									</li>
 									<li className='users__icon'>
 										<LikeIcon
@@ -338,7 +334,6 @@ function ProfileHero() {
 													: 'black'
 											}
 										/>
-										&nbsp; 8
 									</li>
 									<li className='users__icon'>
 										<ShareIcon

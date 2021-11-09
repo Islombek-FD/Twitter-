@@ -65,5 +65,16 @@
 	&__icon {
 		display: flex;
 		align-items: center;
+		height: 20px;
+	}
+
+	&__icon-svg {
+		cursor: pointer;
+	}
+
+	&__icon-click--count {
+		margin-left: 8px;
+		font-size: 20px;
+		color: rgb(239, 28, 92);
 	}
 }

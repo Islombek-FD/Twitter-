@@ -48,19 +48,16 @@ function Todos() {
 								<CommentIcon
 									color={theme === 'dark' ? 'white' : 'black'}
 								/>
-								&nbsp; 10
 							</li>
 							<li className='users__icon'>
 								<RetweetIcon
 									color={theme === 'dark' ? 'white' : 'black'}
 								/>
-								&nbsp; 1
 							</li>
 							<li className='users__icon'>
 								<LikeIcon
 									color={theme === 'dark' ? 'white' : 'black'}
 								/>
-								&nbsp; 8
 							</li>
 							<li className='users__icon'>
 								<ShareIcon
@@ -107,11 +104,9 @@ function Todos() {
 							</li>
 							<li className='users__icon'>
 								<RetweetIcon color={'#0cb245'} />
-								&nbsp; 5
 							</li>
 							<li className='users__icon'>
 								<LikeIcon color={'#ef1c5c'} />
-								&nbsp; 9
 							</li>
 							<li className='users__icon'>
 								<ShareIcon
@@ -161,19 +156,16 @@ function Todos() {
 								<CommentIcon
 									color={theme === 'dark' ? 'white' : 'black'}
 								/>
-								&nbsp; 10
 							</li>
 							<li className='users__icon'>
 								<RetweetIcon
 									color={theme === 'dark' ? 'white' : 'black'}
 								/>
-								&nbsp; 1
 							</li>
 							<li className='users__icon'>
 								<LikeIcon
 									color={theme === 'dark' ? 'white' : 'black'}
 								/>
-								&nbsp; 8
 							</li>
 							<li className='users__icon'>
 								<ShareIcon
