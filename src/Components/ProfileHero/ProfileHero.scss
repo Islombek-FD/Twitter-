@@ -144,13 +144,16 @@
 		padding: 0 25px;
 	}
 
-	&__user-menu--item {
+	&__user-menu--link {
 		position: relative;
 		@include fontAll(400, 18px, 24px);
 		@include transition;
+		text-decoration: none;
+		color: $dark;
 
 		&.active {
 			@include fontAll(700, 18px, 24px);
+			color: $text-blue;
 		}
 
 		&.active::before {
@@ -162,6 +165,10 @@
 			background-color: #1da1f2;
 			border-radius: 4px;
 		}
+	}
+
+	&.dark &__user-menu--link {
+		color: $white;
 	}
 
 	&__user-tweets {

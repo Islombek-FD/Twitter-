@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './Hero.scss';
+
 import content from '../../Localization/Content.js';
 import useTheme from '../../Hooks/useTheme.js';
 import useLang from '../../Hooks/useLang.js';
@@ -12,9 +12,10 @@ import StatsIcon from '../../Assets/Images/stats_icon.svg';
 import SmileIcon from '../../Assets/Images/smile_icon.svg';
 import ScheduleIcon from '../../Assets/Images/schedule.svg';
 
-function Hero() {
+function Hero({ todos, setTodos }) {
 	const [lang] = useLang();
 	const [theme] = useTheme();
+
 	const elInput = React.useRef();
 
 	return (
@@ -51,7 +52,18 @@ function Hero() {
 
 						<button
 							className='hero__btn'
-							onClick={() => elInput.current.focus()}>
+							onClick={() => {
+								elInput.current.focus();
+
+								const newTodo = {
+									id: todos[todos.length - 1]?.id + 1 || 0,
+									post: elInput.current.value,
+								};
+
+								setTodos([...todos, newTodo]);
+
+								elInput.current.value = null;
+							}}>
 							{content[lang].menu.button}
 						</button>
 					</div>

@@ -17,9 +17,9 @@ function Header() {
 	return (
 		<>
 			<header className={`header ${theme === 'dark' && 'dark'}`}>
-				<a className='page__link' href='#link'>
+				<NavLink className='page__link' to='/'>
 					{content[lang].main.page}
-				</a>
+				</NavLink>
 
 				<select
 					className='langs__select'
