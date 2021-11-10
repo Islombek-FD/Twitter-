@@ -3,15 +3,13 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
-import ProfileHero from './Components/ProfileHero/ProfileHero.jsx';
 
 function AuthenticatedApp() {
 	return (
 		<>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/profile' element={<Profile />} />
-				<Route path='profile/*' element={<ProfileHero />} />
+				<Route path='/profile/*' element={<Profile />} />
 			</Routes>
 		</>
 	);
