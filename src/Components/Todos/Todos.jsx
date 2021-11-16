@@ -22,6 +22,66 @@ function Todos({ todos }) {
 	return (
 		<>
 			<ul className={`users ${theme === 'dark' && 'dark'}`}>
+				{todos.map((todo) => (
+					<li className='users__item'>
+						<img
+							className='users__image'
+							src={User}
+							alt='Designsta img'
+							width='60'
+							height='60'
+						/>
+						<div className='users__info'>
+							<strong className='users__name'>Bobur</strong>
+							<a
+								className='users__account'
+								href='mailto:@bobur_mavlonov'>
+								@bobur_mavlonov
+							</a>
+
+							<Ellipsis />
+							<p className='users__post'>{todo.post}</p>
+
+							<ul className='users__icons'>
+								<li className='users__icon'>
+									<CommentIcon
+										color={
+											theme === 'dark' ? 'white' : 'black'
+										}
+									/>
+								</li>
+								<li className='users__icon'>
+									<RetweetIcon
+										color={
+											theme === 'dark' ? 'white' : 'black'
+										}
+									/>
+								</li>
+								<li className='users__icon'>
+									<LikeIcon
+										color={
+											theme === 'dark' ? 'white' : 'black'
+										}
+									/>
+								</li>
+								<li className='users__icon'>
+									<ShareIcon
+										color={
+											theme === 'dark' ? 'white' : 'black'
+										}
+									/>
+								</li>
+								<li className='users__icon'>
+									<StatisticsIcon
+										color={
+											theme === 'dark' ? 'white' : 'black'
+										}
+									/>
+								</li>
+							</ul>
+						</div>
+					</li>
+				))}
 				<li className='users__item'>
 					<img
 						className='users__image'
@@ -183,67 +243,6 @@ function Todos({ todos }) {
 						</ul>
 					</div>
 				</li>
-
-				{todos.map((todo) => (
-					<li className='users__item'>
-						<img
-							className='users__image'
-							src={User}
-							alt='Designsta img'
-							width='60'
-							height='60'
-						/>
-						<div className='users__info'>
-							<strong className='users__name'>Bobur</strong>
-							<a
-								className='users__account'
-								href='mailto:@bobur_mavlonov'>
-								@bobur_mavlonov
-							</a>
-
-							<Ellipsis />
-							<p className='users__post'>{todo.post}</p>
-
-							<ul className='users__icons'>
-								<li className='users__icon'>
-									<CommentIcon
-										color={
-											theme === 'dark' ? 'white' : 'black'
-										}
-									/>
-								</li>
-								<li className='users__icon'>
-									<RetweetIcon
-										color={
-											theme === 'dark' ? 'white' : 'black'
-										}
-									/>
-								</li>
-								<li className='users__icon'>
-									<LikeIcon
-										color={
-											theme === 'dark' ? 'white' : 'black'
-										}
-									/>
-								</li>
-								<li className='users__icon'>
-									<ShareIcon
-										color={
-											theme === 'dark' ? 'white' : 'black'
-										}
-									/>
-								</li>
-								<li className='users__icon'>
-									<StatisticsIcon
-										color={
-											theme === 'dark' ? 'white' : 'black'
-										}
-									/>
-								</li>
-							</ul>
-						</div>
-					</li>
-				))}
 			</ul>
 		</>
 	);
