@@ -12,7 +12,9 @@ function SignUp() {
 
 					<h2 className='sign-up__heading'>Create an account</h2>
 
-					<form className='sign-up__form'>
+					<form className='sign-up__form' onClick={(evt) => {
+							evt.preventDefault();
+						}}>
 						<input
 							className='sign-up__form-input--name'
 							type='text'
