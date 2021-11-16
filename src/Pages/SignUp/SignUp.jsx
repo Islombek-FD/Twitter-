@@ -12,7 +12,7 @@ function SignUp() {
 
 					<h2 className='sign-up__heading'>Create an account</h2>
 
-					<form className='sign-up__form' onClick={(evt) => {
+					<form className='sign-up__form' onSubmit={(evt) => {
 							evt.preventDefault();
 						}}>
 						<input
